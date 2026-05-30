@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gaphor.org" />
+    <meta property="og:site_name" content="Gaphor, the SysML/UML modeling tool" />
+    <link rel='dns-prefetch' href='https://fonts.bunny.net' />
+    <link rel='dns-prefetch' href='https://cdnjs.cloudflare.com' />
+    <link rel="shortcut icon" href="/images/gaphor-24x24.png" />
+
+    <link defer crossorigin="anonymous" rel='stylesheet'
+        href='https://fonts.bunny.net/css?family=open-sans:400,700|mulish:300,800,900'
+        type='text/css' media='all' />
+    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" media='all' />
+    <link rel='stylesheet' href='/css/main.css' type='text/css' />
+    
+    <link rel="alternate" hreflang="cs" href="https://gaphor.org/cs/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="de" href="https://gaphor.org/de/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="en" href="https://gaphor.org/en/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="es" href="https://gaphor.org/es/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="fr" href="https://gaphor.org/fr/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="hr" href="https://gaphor.org/hr/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="hu" href="https://gaphor.org/hu/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="it" href="https://gaphor.org/it/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="kmr" href="https://gaphor.org/kmr/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="nl" href="https://gaphor.org/nl/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="pt_BR" href="https://gaphor.org/pt_BR/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="ru" href="https://gaphor.org/ru/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="ta" href="https://gaphor.org/ta/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="tr" href="https://gaphor.org/tr/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="uk" href="https://gaphor.org/uk/tutorials/report-bugs/"/>
+    <link rel="alternate" hreflang="zh_Hans" href="https://gaphor.org/zh_Hans/tutorials/report-bugs/"/>
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>如何报告 Gaphor 中的 Bug | Gaphor</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="如何报告 Gaphor 中的 Bug" />
+<meta property="og:locale" content="zh_Hans" />
+<meta name="description" content="Gaphor is a UML, SysML, RAAML, and C4 modeling application written in Python. It is designed to be easy to use, while still being powerful. Gaphor implements a fully-compliant UML 2 data model, so it is much more than a picture drawing tool. You can use Gaphor to quickly visualize different aspects of a system as well as create complete, highly complex models." />
+<meta property="og:description" content="Gaphor is a UML, SysML, RAAML, and C4 modeling application written in Python. It is designed to be easy to use, while still being powerful. Gaphor implements a fully-compliant UML 2 data model, so it is much more than a picture drawing tool. You can use Gaphor to quickly visualize different aspects of a system as well as create complete, highly complex models." />
+<link rel="canonical" href="https://gaphor.org/zh_Hans/tutorials/report-bugs/" />
+<meta property="og:url" content="https://gaphor.org/tutorials/report-bugs/" />
+<meta property="og:site_name" content="Gaphor" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="如何报告 Gaphor 中的 Bug" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Gaphor is a UML, SysML, RAAML, and C4 modeling application written in Python. It is designed to be easy to use, while still being powerful. Gaphor implements a fully-compliant UML 2 data model, so it is much more than a picture drawing tool. You can use Gaphor to quickly visualize different aspects of a system as well as create complete, highly complex models.","headline":"如何报告 Gaphor 中的 Bug","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://gaphor.org/images/gaphor-logo-white.svg"}},"url":"https://gaphor.org/tutorials/report-bugs/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+	<div class="top-header">
+  <div class="container">
+    <div class="row">
+      <nav class="col-12 d-flex justify-content-end language-navigation">
+
+    <form action="/tutorials/report-bugs/" method="get">
+
+        <select id="language-chooser-select" name="lang" autocomplete="off">
+            
+            <option value="cs" >
+                Čeština
+            </option>
+            
+            <option value="de" >
+                Deutsch
+            </option>
+            
+            <option value="en" >
+                English
+            </option>
+            
+            <option value="es" >
+                Español
+            </option>
+            
+            <option value="fr" >
+                Français
+            </option>
+            
+            <option value="hr" >
+                Hrvatski
+            </option>
+            
+            <option value="hu" >
+                magyar
+            </option>
+            
+            <option value="it" >
+                italiano
+            </option>
+            
+            <option value="kmr" >
+                کورد
+            </option>
+            
+            <option value="nl" >
+                Nederlands
+            </option>
+            
+            <option value="pt_BR" >
+                português do Brasil
+            </option>
+            
+            <option value="ru" >
+                Русский
+            </option>
+            
+            <option value="ta" >
+                தமிழ்
+            </option>
+            
+            <option value="tr" >
+                Türkçe
+            </option>
+            
+            <option value="uk" >
+                українська
+            </option>
+            
+            <option value="zh_Hans" selected="selected" >
+                中文（简体）
+            </option>
+            
+        </select>
+
+        <script src="/js/languages.js" async></script>
+
+        <noscript>
+            <input id="language-chooser-submit" type="submit" value="更改"/>
+        </noscript>
+
+    </form>
+</nav>
+
+    </div>
+    <div class="row">
+      <div class="col-10 col-lg-3">
+        <a href="/zh_Hans/" title="" class="header-logo">
+          
+          <img src="/images/gaphor-logo-white.svg" alt="Gaphor logo" />
+          
+          </a>
+      </div>
+      <div class="col-2 col-lg-9">
+        <label for="menu-toggle" class="open-responsive-menu"><i class="fa fa-bars"></i></label>
+        <nav class="header-navigation">
+          <ul>
+            <li><a href="/zh_Hans/#about">关于</a></li>
+            <li><a href="/zh_Hans/download">下载</a></li>
+            <li><a href="/zh_Hans/tutorials">教程</a></li>
+            <li><a href="/zh_Hans/blog">博客</a></li>
+            <li><a href="/zh_Hans/discuss">联系我们</a></li>
+            <li><a href="/zh_Hans/contribute">参与贡献</a></li>
+            <li><a href="https://github.com/gaphor/gaphor"><i class='fab fa-github' style='font-size: 168%' title='GitHub repository'></i></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<input id="menu-toggle" type="checkbox" hidden></input>
+<nav class="responsive-menu">
+  <label for="menu-toggle" class="close-responsive-menu"><i class="fa fa-times"></i></label>
+  <ul>
+    <li><a href="/zh_Hans/">首页</a></li>
+    <li><a href="/zh_Hans/#about">关于</a></li>
+    <li><a href="/zh_Hans/download">下载</a></li>
+    <li><a href="/zh_Hans/tutorials">教程</a></li>
+    <li><a href="/zh_Hans/blog">博客</a></li>
+    <li><a href="/zh_Hans/discuss">联系我们</a></li>
+    <li><a href="/zh_Hans/contribute">参与贡献</a></li>
+    <li><a href="https://github.com/gaphor/gaphor"><i class='fab fa-github' style='font-size: 168%' title='GitHub repository'></i></a>
+  </ul>
+</nav>
+
+
+<div class="default-page">
+<section>
+    <div class="section-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <h1>如何报告 Gaphor 中的 Bug</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+                <p>但凡写过代码的人都知道，所有软件都难免存在缺陷，Gaphor 也不例外。若您发现疑似问题，只需点击下方链接（需拥有 GitHub
+账户），随后点击页面右上角的绿色”New Issue”按钮即可提交：</p>
+
+<p><a href="https://github.com/gaphor/gaphor/issues">报告Gaphor中的Bug</a></p>
+
+<p>当您提交新问题时，系统会自动分配编号，编写和维护代码的志愿者开发者将通过邮件收到通知。若问题描述不够清晰，开发者可能会在您的问题下追加询问。他们可能直接关闭问题并标记为”duplicate”（表示该问题已被他人提交——开发者会附上原始问题的参考链接）。有时开发者会以”won’t
+fix” （不予修复）关闭问题，这可能是因为他们不认为这是缺陷<em>或</em>该问题过于琐碎不值得投入时间处理。</p>
+
+<p>Bug一般分为两种：</p>
+
+<ul>
+  <li>技术问题：代码中存在错误，导致程序崩溃。</li>
+  <li>行为：代码工作正常，但做了错误的事情。</li>
+</ul>
+
+<p>在这两种情况下，我们都需要<strong>尽可能多的信息</strong>才能修复Bug。在创建新Issue时，您应尽量包含以下相关信息：</p>
+
+<ul>
+  <li>您想要做什么</li>
+  <li>您采取了哪些措施来实现这一点，</li>
+  <li>您期望发生什么，</li>
+  <li>实际发生了什么，</li>
+  <li>为什么这种差异会造成问题（它可能不是一个Bug！），</li>
+  <li>技术细节，如您使用的 Gaphor 版本、操作系统版本以及 Gaphor 运行环境的其他方面信息。</li>
+</ul>
+
+<p>请使用简明扼要的语言描述问题，如有可能请分步骤说明，以便开发者能轻松复现该问题。切勿假设我们理解您的预期目标——坦白说，最佳方式是把我们（开发者）想象成一群聪明的5岁小孩。请详细解释问题的<em>所有细节</em>，不要默认我们知晓您的所指。我们完全不会介意！</p>
+
+<p>如果您想更多地参与 Gaphor 的开发，我们非常欢迎您通过访问<a href="https://docs.gaphor.org/en/latest">Gaphor
+开发者网站</a>以了解更多信息。</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<link rel='stylesheet' href='/css/highlight.css' type='text/css' media='all' />
+
+</div>
+
+
+	<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-1">
+                <h5>我们期待您的反馈</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-6 col-lg-4">
+                <ul class="fa-ul">
+                    <li><a href="https://matrix.to/#/#gaphor_Lobby:gitter.im"><i class="fa-li fa fa-angle-right"></i>
+                        <i class="far fa-comment"></i> 在线交流</a></li>
+                    <li><a href="https://fosstodon.org/@gaphor" rel="me"><i class="fa-li fa fa-angle-right"></i>
+                        <i class="fab fa-mastodon"></i> Mastodon</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-6 col-lg-4">
+                <ul class="fa-ul">
+                    <li><a href="https://docs.gaphor.org/en/latest"><i class="fa-li fa fa-angle-right"></i>
+                        <i class="fas fa-book"></i> 阅读文档</a></li>
+                    <li><a href="https://github.com/gaphor/gaphor/issues"><i class="fa-li fa fa-angle-right"></i>
+                        <i class="fas fa-bug"></i> 提交问题</a></li>
+                    <li><a href="https://github.com/gaphor"><i class="fa-li fa fa-angle-right"></i>
+                        <i class="fab fa-github"></i> 贡献代码</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <div class="container">
+            <p class="copyright">
+                <span>主题: <a href="https://colorlib.com/wp/themes/illdy/" title="Illdy">Illdy</a>.</span>
+                <span class="bottom-copyright">版权所有 &copy; 2020，Gaphor 开发团队。</span>
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+<!-- page.url is / or /XX/ for translations -->
+
+
+
+    <script type="application/javascript">
+var codeBlocks = document.querySelectorAll('pre.highlight');
+
+codeBlocks.forEach(function (codeBlock) {
+  var copyButton = document.createElement('button');
+  copyButton.className = 'copy';
+  copyButton.type = 'button';
+  copyButton.ariaLabel = 'Copy code to clipboard';
+  copyButton.innerText = 'Copy';
+
+  codeBlock.append(copyButton);
+
+  copyButton.addEventListener('click', function () {
+    var code = codeBlock.querySelector('code').innerText.trim();
+    window.navigator.clipboard.writeText(code);
+
+    copyButton.innerText = 'Copied';
+    var fourSeconds = 4000;
+
+    setTimeout(function () {
+      copyButton.innerText = 'Copy';
+    }, fourSeconds);
+  });
+});
+</script>
+
+
+</body>
+
+</html>
